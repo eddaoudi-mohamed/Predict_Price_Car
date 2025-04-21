@@ -1,6 +1,7 @@
 # Makefile to archive and compress folders, and to extract them
 
 # Variables
+RESOURCES_DIR = /resources
 MODELS_DIR = Models
 DATA_DIR = Data
 MODELS_ARCHIVE = $(RESOURCES_DIR)/Models.tar
