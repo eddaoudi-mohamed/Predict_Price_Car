@@ -3,8 +3,8 @@
 # Variables
 MODELS_DIR = Models
 DATA_DIR = Data
-MODELS_ARCHIVE = Models.tar
-DATA_ARCHIVE = Data.tar
+MODELS_ARCHIVE = $(RESOURCES_DIR)/Models.tar
+DATA_ARCHIVE = $(RESOURCES_DIR)/Data.tar
 MODELS_ZIP = $(MODELS_ARCHIVE).zip
 DATA_ZIP = $(DATA_ARCHIVE).zip
 
