@@ -34,11 +34,45 @@ The final model is deployed as a web application or API, allowing users to input
 - Python 3.x
 - Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, Flask/Django (for deployment)
 
+## Makefile Commands
+This project includes a `Makefile` to simplify common tasks. Below are the available commands and their utilities:
+
+### 1. `make archive`
+- **Description**: Archives and compresses the `Models` and `Data` directories into `.tar` files and then zips them.
+- **Usage**:
+  ```bash
+  make archive
+  ```
+- **Result**: Creates `Models.tar.zip` and `Data.tar.zip` files.
+
+### 2. `make extract`
+- **Description**: Moves the compressed files (`Models.tar.zip` and `Data.tar.zip`) outside the `resources` folder, extracts them, and cleans up temporary files.
+- **Usage**:
+  ```bash
+  make extract
+  ```
+- **Result**: Extracts the contents of the compressed files into the current directory.
+
+### 3. `make clean`
+- **Description**: Removes the compressed `.zip` files.
+- **Usage**:
+  ```bash
+  make clean
+  ```
+- **Result**: Deletes `Models.tar.zip` and `Data.tar.zip`.
+
 ## How to Run
 1. Clone the repository.
-2. Install the required libraries using `pip install -r requirements.txt`.
+2. Install the required libraries using:
+   ```bash
+   pip install -r requirements.txt
+   ```
 3. Run the notebooks in the `notebooks/` folder for data analysis and model training.
-4. Deploy the application by running the script in the `app/` folder.
+4. Use the `Makefile` commands to manage data and models:
+   - Archive data and models: `make archive`
+   - Extract data and models: `make extract`
+   - Clean up zip files: `make clean`
+5. Deploy the application by running the script in the `app/` folder.
 
 ## License
 This project is licensed under the MIT License.
