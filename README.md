@@ -46,7 +46,7 @@ This project includes a `Makefile` to simplify common tasks. Below are the avail
 - **Result**: Creates `Models.tar.zip` and `Data.tar.zip` files.
 
 ### 2. `make extract`
-- **Description**: Moves the compressed files (`Models.tar.zip` and `Data.tar.zip`) outside the `resources` folder, extracts them, and cleans up temporary files.
+- **Description**: Extracts files (`Models.tar.zip` and `Data.tar.zip`), and cleans up temporary files.
 - **Usage**:
   ```bash
   make extract
